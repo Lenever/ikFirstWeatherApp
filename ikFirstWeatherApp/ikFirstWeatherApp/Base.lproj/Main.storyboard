@@ -102,7 +102,7 @@
                                                 </subviews>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.27479076390000001" green="0.5571715236" blue="0.89757764340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="aSD-6R-Vsy" secondAttribute="trailing" constant="25" id="BLf-ZS-2EV"/>
                                             <constraint firstItem="aSD-6R-Vsy" firstAttribute="leading" secondItem="l9N-MV-DYl" secondAttribute="leading" constant="25" id="Dwc-NZ-YHo"/>
@@ -123,29 +123,30 @@
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ggM-EQ-1C5">
                                         <rect key="frame" x="0.0" y="494" width="414" height="402"/>
-                                        <color key="backgroundColor" red="0.27479076390000001" green="0.5571715236" blue="0.89757764340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="firstTableCell" rowHeight="56" id="wG5-0l-xxf" customClass="firstTableViewCell" customModule="ikFirstWeatherApp" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="firstTableCell" rowHeight="56" id="wG5-0l-xxf" customClass="FirstTableViewCell" customModule="ikFirstWeatherApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="414" height="56"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wG5-0l-xxf" id="RFI-2I-UTw">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="d1v-a0-V1n">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d1v-a0-V1n">
                                                             <rect key="frame" x="25" y="0.0" width="364" height="56"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tuesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKg-Nf-C48">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="121.5" height="56"/>
+                                                                    <rect key="frame" x="0.0" y="16" width="121.5" height="24"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clear" translatesAutoresizingMaskIntoConstraints="NO" id="qg3-SG-byX">
-                                                                    <rect key="frame" x="121.5" y="0.0" width="121" height="56"/>
+                                                                    <rect key="frame" x="121.5" y="15" width="121" height="26"/>
+                                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20°" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="120.5" translatesAutoresizingMaskIntoConstraints="NO" id="awD-ve-Wg1">
-                                                                    <rect key="frame" x="242.5" y="0.0" width="121.5" height="56"/>
+                                                                    <rect key="frame" x="242.5" y="16" width="121.5" height="24"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -153,6 +154,8 @@
                                                             </subviews>
                                                             <constraints>
                                                                 <constraint firstItem="aKg-Nf-C48" firstAttribute="centerY" secondItem="d1v-a0-V1n" secondAttribute="centerY" id="2h9-Rh-5bZ"/>
+                                                                <constraint firstItem="qg3-SG-byX" firstAttribute="top" secondItem="d1v-a0-V1n" secondAttribute="top" constant="15" id="Bef-GZ-Qiu"/>
+                                                                <constraint firstAttribute="bottom" secondItem="qg3-SG-byX" secondAttribute="bottom" constant="15" id="j8Z-E1-3yn"/>
                                                                 <constraint firstAttribute="height" constant="70" id="kcH-im-8Wm"/>
                                                                 <constraint firstItem="qg3-SG-byX" firstAttribute="leading" secondItem="aKg-Nf-C48" secondAttribute="trailing" constant="50" id="ngb-hX-epe"/>
                                                             </constraints>
@@ -166,6 +169,11 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <connections>
+                                                    <outlet property="dayOfWeek" destination="aKg-Nf-C48" id="mvm-0h-O3Z"/>
+                                                    <outlet property="weatherIcon" destination="qg3-SG-byX" id="HBm-gA-8Ku"/>
+                                                    <outlet property="weekDayTemp" destination="awD-ve-Wg1" id="ZlH-fN-p8o"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                         <connections>
@@ -195,6 +203,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="currentMaxTemp" destination="RAz-Hh-iOd" id="Pdf-Ba-nXy"/>
+                        <outlet property="currentMinTemp" destination="4vD-W7-QHe" id="zI0-Vr-iUR"/>
+                        <outlet property="currentTemp" destination="v5V-YL-W3h" id="C8y-eY-Ji8"/>
+                        <outlet property="currentTemp1" destination="JrJ-0z-JWS" id="p1O-8W-nvp"/>
+                        <outlet property="currentWeatherImage" destination="OVv-h2-FEM" id="X0q-uV-raa"/>
+                        <outlet property="fiveDayTableView" destination="ggM-EQ-1C5" id="id2-or-9ol"/>
+                        <outlet property="tempDesc" destination="cGP-9q-KDf" id="Jga-AV-0kg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
